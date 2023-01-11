@@ -5,7 +5,11 @@
             <div class="header__right-block">
                 <a href="https://github.com/kotiy01/frontend-3/tree/main/exam-3-semester" class="header__link black--text">GitHub</a>
                 <a href="https://my-json-server.typicode.com/kotiy01/json-files/db" class="header__link black--text">JSON</a>
-                <a href="" class="header__login black--text">Войти</a>
+                <div class="header__login-block">
+                    <img src="https://cdn.onlinewebfonts.com/svg/download_321577.png" alt="" class="header__icon">
+                    <a href="" class="header__link black--text">Виктор</a>
+                    <a href="" class="header__login black--text">Выйти</a>
+                </div>
             </div>
         </div>
     </header>
@@ -47,6 +51,25 @@ export default {
     text-decoration: none;
     color: black;
     margin-left: 32px;
+}
+.header__right-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.header__login-block {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 32px;
+}
+.header__icon {
+    width: 22px;
+    height: 22px;
+    margin-right: -24px;
 }
 .header__login {
     font-size: 20px;
