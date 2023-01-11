@@ -2,7 +2,11 @@
     <header class="header blue lighten-3">
         <div class="header__container">
             <router-link :to="{name: 'main'}" class="header__logo black--text">Таск-трекер</router-link>
-            <a href="" class="header__login black--text">Войти</a>
+            <div class="header__right-block">
+                <a href="https://github.com/kotiy01/frontend-3/tree/main/exam-3-semester" class="header__link black--text">GitHub</a>
+                <a href="https://my-json-server.typicode.com/kotiy01/json-files/db" class="header__link black--text">JSON</a>
+                <a href="" class="header__login black--text">Войти</a>
+            </div>
         </div>
     </header>
 </template>
@@ -36,6 +40,14 @@ export default {
     text-decoration: none;
     color: black;
 }
+.header__link {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: black;
+    margin-left: 32px;
+}
 .header__login {
     font-size: 20px;
     font-weight: 500;
@@ -46,5 +58,6 @@ export default {
     border-radius: 4px;
     background-color: #FFFFFF;
     padding: 6px 16px 6px 16px;
+    margin-left: 32px;
 }
 </style>

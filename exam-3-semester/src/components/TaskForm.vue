@@ -1,5 +1,6 @@
 <template>
     <v-form class="form d-flex align-center justify-center flex-column">
+        <h2 class="form__title">Добавить задание</h2>
         <v-text-field v-model="title" label="Название задания" required class="form__input" />
         <v-text-field v-model="date" label="Дата" required class="form__input" />
         <v-text-field v-model="desc" label="Описание задания" required class="form__input" />
@@ -29,6 +30,20 @@ export default {
 </script>
 
 <style>
+.form {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.form__title {
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: black;
+    width: 400px;
+    align-self: flex-start;
+    margin-bottom: 12px;
+}
 .form__input {
     width: 400px;
 }

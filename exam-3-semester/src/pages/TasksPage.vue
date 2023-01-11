@@ -1,6 +1,6 @@
 <template>
-    <v-container class="tasks-container d-flex flex-column align-center justify-center">
-        <TaskForm @addTask="addTask"/>
+    <v-container class="tasks-container d-flex flex-column align-center justify-flex-start">
+        <TaskForm @addTask="addTask" />
         <TaskComponent
             v-for="task in $store.getters.getAllTasks"
             :task="task" :key="task.id"
@@ -35,3 +35,7 @@ export default {
     }
 }
 </script>
+
+<style>
+
+</style>
