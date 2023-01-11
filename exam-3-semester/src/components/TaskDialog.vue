@@ -1,5 +1,5 @@
 <template>
-    <v-dialog v-model="$store.getters.getDialogVisible" max-width="600" @click:outside="store.commit('hideDialog')">
+    <v-dialog v-model="$store.getters.getDialogVisible" max-width="600" @click:outside="closeTask">
         <v-card>
             <v-card-title>{{ $store.getters.getCurrentTask.title }}</v-card-title>
             <v-card-text>{{ $store.getters.getCurrentTask.date }}</v-card-text>
@@ -10,6 +10,10 @@
 
 <script>
 export default {
-
+    methods: {
+        closeTask() {
+            this.$store.commit("hideDialog")
+        }
+    }
 }
 </script>

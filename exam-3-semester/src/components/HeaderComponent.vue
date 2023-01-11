@@ -1,7 +1,7 @@
 <template>
     <header class="header blue lighten-3">
         <div class="header__container">
-            <a href="" class="header__logo black--text">Таск-трекер</a>
+            <router-link :to="{name: 'main'}" class="header__logo black--text">Таск-трекер</router-link>
             <a href="" class="header__login black--text">Войти</a>
         </div>
     </header>
