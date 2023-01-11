@@ -1,9 +1,9 @@
 <template>
     <v-form class="form d-flex align-center justify-center flex-column">
         <h2 class="form__title">Добавить задание</h2>
-        <v-text-field v-model="title" label="Название задания" required class="form__input" />
-        <v-text-field v-model="date" label="Дата" required class="form__input" />
-        <v-text-field v-model="desc" label="Описание задания" required class="form__input" />
+        <v-text-field v-model="title" label="Название задания" required class="form__input" inputmode="text"/>
+        <v-text-field v-model="date" label="Дата" required class="form__input" inputmode="numeric"/>
+        <v-text-field v-model="desc" label="Описание задания" required class="form__input" inputmode="text"/>
         <v-btn @click="addTask" class="blue lighten-3">Добавить</v-btn>
     </v-form>
 </template>

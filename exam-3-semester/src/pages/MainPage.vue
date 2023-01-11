@@ -134,4 +134,30 @@ export default {
     margin-top: -10px;
     padding: 0 10px 0 10px;
 }
+
+@media print {
+    @page {
+        margin: 2cm;
+    }
+
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    h1 {
+        font-size: 28pt;
+    }
+    h2 {
+        font-size: 20pt;
+    }
+    p {
+        font-size: 14pt;
+    }
+    .header, .footer, .main-sec__link {
+        display: none;
+    }
+}
 </style>
