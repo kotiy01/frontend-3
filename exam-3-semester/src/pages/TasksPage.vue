@@ -39,5 +39,35 @@ export default {
 </script>
 
 <style>
-
+@media print {
+    @page {
+        margin: 2cm;
+    }
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    h1 {
+        font-size: 28pt;
+    }
+    h2 {
+        font-size: 20pt;
+    }
+    p {
+        font-size: 14pt;
+    }
+    .header, .footer, .form {
+        display: none;
+    }
+    .task-card__text-none {
+        display: block;
+        font-size: 14pt;
+    }
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
 </style>

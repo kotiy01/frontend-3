@@ -77,7 +77,7 @@ export default {
 
 .reviews-sec {
     width: 100%;
-    height: 300px;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,6 +134,36 @@ export default {
     margin-top: -10px;
     padding: 0 10px 0 10px;
 }
+.form {
+    width: 800px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+.form__title {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    margin-bottom: 24px;
+}
+.form__label-main {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+.form__input-main {
+    border: 2px solid #90CAF9;
+    border-radius: 4px;
+    padding: 6px;
+    margin-right: 40px;
+    margin-left: 10px;
+    width: 240px;
+}
 
 @media print {
     @page {
@@ -156,8 +186,17 @@ export default {
     p {
         font-size: 14pt;
     }
-    .header, .footer, .main-sec__link {
+    .header, .footer, .main-sec__link, .form {
         display: none;
+        visibility: hidden;
+    }
+    .main-sec, .reviews-sec {
+        height: 50%;
+    }
+    .item {
+        width: 30%;
+        border: 1px solid black;
+        height: 5cm;
     }
 }
 </style>

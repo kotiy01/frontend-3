@@ -16,6 +16,16 @@
                     <p class="item__desc">Пользуюсь сервисом ежедневно!!!</p>
                 </div>
             </div>
+            <form class="form">
+                <p class="form__title">Добавить отзыв</p>
+                <div class="form__inputs-block">
+                    <label for="name" class="form__label-main">Имя</label>
+                    <input type="text" id="name" class="form__input-main">
+                    <label for="review" class="form__label-main">Отзыв</label>
+                    <input type="text" id="review" class="form__input-main">
+                    <v-btn class="blue lighten-3">Добавить</v-btn>
+                </div>
+            </form>
         </div>
     </section>
 </template>

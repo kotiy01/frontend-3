@@ -1,6 +1,7 @@
 <template>
-    <v-card class="task-card blue lighten-3 d-flex align-center justify-space-between flex-row" @click="openTask">
+    <v-card class="task-card blue lighten-3 d-flex align-center justify-space-between flex-column" @click="openTask">
         <v-card-text class="task-card__text black--text">{{ task.title + " - " + task.date }}</v-card-text>
+        <v-card-text class="task-card__text-none black--text">{{ task.desc }}</v-card-text>
     </v-card>
 </template>
 
@@ -33,5 +34,8 @@ export default {
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     font-weight: 500;
+}
+.task-card__text-none {
+    display: none;
 }
 </style>
