@@ -1,5 +1,5 @@
 <template>
-    <header class="header">
+    <header class="header blue lighten-3">
         <div class="header__container">
             <a href="" class="header__logo black--text">Таск-трекер</a>
             <a href="" class="header__login black--text">Войти</a>
@@ -18,7 +18,6 @@ export default {
 .header {
     width: 100%;
     height: 80px;
-    background-color: #66BFFF;
     display: flex;
     align-items: center;
     justify-content: center;

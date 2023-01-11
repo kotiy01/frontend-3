@@ -1,5 +1,8 @@
 <template>
-  <HeaderComponent />
+  <v-app>
+    <HeaderComponent />
+    <router-view />
+  </v-app>
 </template>
 
 <script>
